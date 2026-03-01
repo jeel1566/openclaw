@@ -81,7 +81,7 @@ These are practical, revenue-generating products you can build on OpenClaw. Each
 **What you build:** A WhatsApp bot where clients forward receipts and invoices. The agent extracts amounts, dates, and vendors from images/PDFs, categorizes them, and produces monthly summaries ready for the accountant.
 
 **How it works with OpenClaw:**
-- Clients send photos/PDFs of receipts via WhatsApp — OpenClaw handles [media processing](/nodes/images)
+- Clients send photos/PDFs of receipts via WhatsApp — OpenClaw handles [images](/nodes/images) and [audio](/nodes/audio) processing
 - Vision models extract data from receipt images
 - Agent writes structured records to workspace files or a database
 - [Cron jobs](/automation/cron-jobs) generate monthly reports and flag missing documents
@@ -155,7 +155,7 @@ These are practical, revenue-generating products you can build on OpenClaw. Each
 **What you build:** An agent that pulls data from multiple sources, generates branded reports, and delivers them to clients on schedule — all triggered from a Slack message or automated cron.
 
 **How it works with OpenClaw:**
-- [Browser automation](/tools/browser) logs into analytics dashboards and extracts data
+- [Browser automation](/tools/browser) logs into analytics dashboards and extracts data (check each platform's terms of service before automating; use [browser profiles](/tools/browser-login) for secure credential management)
 - [Cron jobs](/automation/cron-jobs) generate reports on the 1st of each month
 - Reports delivered to client Telegram/WhatsApp or emailed as PDFs
 - Agency staff can request ad-hoc reports via Slack command
